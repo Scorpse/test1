@@ -31,7 +31,7 @@ class UserController extends Controller{
 					'firstname' => $request->get('firstname'),
 					'lastname' => $request->get('lastname'),
 					'country' => $request->get('country'),
-					'bonus' => $request->get('bonus'),
+					'bonus' => mt_rand(0,20),
 					'password'=> Hash::make($request->get('password'))
 
 				]);
